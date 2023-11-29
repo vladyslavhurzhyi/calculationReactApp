@@ -1,8 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import InputWithPlaceholder from './InputWithPlaceholder';
 import Title from './Title';
 
 const StepOne = ({ nextStep }) => {
+  const [isShowBox, setIsShowBox] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setIsShowBox(true));
+  }, []);
+
   const [operationHours, setOperationHours] = useState(0);
   const [cycleTime, setCycleTime] = useState(0);
   const [costPart, setCostPart] = useState(0);
@@ -56,7 +62,11 @@ const StepOne = ({ nextStep }) => {
 
   return (
     <>
-      <section className="mx-20 mt-20">
+      <section
+        className={`mx-20 mt-20 opacityComponent ${
+          isShowBox ? 'component-show' : ''
+        }`}
+      >
         <div className="flex justify-between">
           <Title text={'Your Operations'} />
 

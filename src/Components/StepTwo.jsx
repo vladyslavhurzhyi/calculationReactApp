@@ -48,10 +48,7 @@ const StepTwo = ({ nextStep, previousStep }) => {
 
         <div className="mt-20 flex justify-between">
           <div className="w-[500px]">
-            <label
-              for="default-range"
-              className="block mb-2  text-xl font-medium text-gray-300 dark:text-white"
-            >
+            <label className="block mb-2  text-xl font-medium text-gray-300 dark:text-white">
               Current Machine Uptime
             </label>
             <input
@@ -89,10 +86,7 @@ const StepTwo = ({ nextStep, previousStep }) => {
 
         <div className="mt-20 flex justify-between">
           <div className="w-[500px]">
-            <label
-              for="default-range"
-              className="block mb-2  text-xl font-medium text-gray-300 dark:text-white"
-            >
+            <label className="block mb-2  text-xl font-medium text-gray-300 dark:text-white">
               Current Utilization Rate
             </label>
             <input
