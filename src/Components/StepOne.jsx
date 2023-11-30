@@ -161,7 +161,7 @@ const StepOne = ({ nextStep }) => {
         </div>
 
         <div
-          className={` my-20  text-gray-500 ${
+          className={` my-20   ${
             operationHours === 0
               ? 'text-gray-500'
               : 'text-gray-50 transition-all ease-out'

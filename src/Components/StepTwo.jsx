@@ -110,7 +110,7 @@ const StepTwo = ({ nextStep, previousStep }) => {
         </div>
 
         <div
-          className={` my-20  text-gray-500 ${
+          className={` my-20   ${
             uptime === 0
               ? 'text-gray-500'
               : 'text-gray-50 transition-all ease-out'
@@ -143,13 +143,13 @@ const StepTwo = ({ nextStep, previousStep }) => {
             </p>
           </div>
 
-          <div className=" flex gap-4">
+          <div className="ml-auto w-[300px] ">
             <button
               onClick={() => {
                 nextStep();
               }}
               type="button"
-              className=" text-black mt-10 text-xl hover:bg-blue-500 transition-all font-bold bg-blue-400 px-5 py-3"
+              className=" text-black mt-10 mr-5 text-xl hover:bg-blue-500 transition-all font-bold bg-blue-400 px-5 py-3"
             >
               Next
             </button>
